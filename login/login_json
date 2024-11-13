@@ -1,0 +1,14 @@
+[
+    {
+        "nome": "Pedro",
+        "idade": "18",
+        "CPF": "123212",
+        "senha": "pdg12"
+    },
+    {
+        "nome": "jose",
+        "idade": "18",
+        "CPF": "1234322342",
+        "senha": "viado"
+    }
+]
