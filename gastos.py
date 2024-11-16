@@ -79,14 +79,14 @@ def buscar_despesa(gasto):
             print(F"Despesa: {despesa['gasto']}, Valor: {despesa['valor']}")
             encontrado = True
     if not encontrado:
-        print("💲DESPESA NÃO ENCONTRADA!💲")
+        print("💲DESPESA NÃO ENCONTRADA!!💲")
 
 def linha_horizontal(cor):
     return cor + "=" * 50 + cor ['RESET']
 
 def menu_inicial():
     print(cor.CIANO + "=" *55 + cor.RESET)
-    print(cor.VERMELHO + " ---->>> BEM VINDO AO ECOFIN! <<<---- ")
+    print(cor.VERMELHO + " ---->>> BEM VINDO AO ECOFIN!! <<<---- ")
     print("          1 - DESPESAS ")
     print("          2 - SAIR ")
     print(cor.CIANO + "=" *55 + cor.RESET)
@@ -102,7 +102,7 @@ def verificar_limite_orcamento(limite):
     print(f"\n💲 TOTAL DE DESPESAS ATÉ AGORA: R$ {total:.2f}")
     
     if total > limite:
-        print("⚠️ ATENÇÃO: VOCÊ ULTRAPASSOU O LIMITE DO SEU ORÇAMENTO!")
+        print("⚠️ ATENÇÃO: VOCÊ ULTRAPASSOU O LIMITE DO SEU ORÇAMENTO!!")
     else:
         print(f"VOCÊ ESTÁ DENTRO DO SEU LIMITE DE ORÇAMENTO QUE É R$ {limite:.2f}.")
 
