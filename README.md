@@ -28,7 +28,7 @@ Bem-vindo ao Ecofin, um gerenciador de finanças pessoais que permite controlar 
 
 1. **Clone o repositório:**
     ```bash
-    git clone 
+    git clone "https://github.com/Rafagomess25/Ecofin"
     ```
 
 2. **Navegue até o diretório do projeto:**
