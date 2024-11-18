@@ -62,7 +62,7 @@ def buscar_usuario(nome):
 
 # Função para o menu de login ou produtos
 def menu_produto():
-    print("\n--- Menu de Produtos ---")
+    print("\n--- Menu ---")
     print("1. Cadastrar usuário")
     print("2. Atualizar cadastro")
     print("3. Excluir cadastro")

@@ -7,7 +7,7 @@ from time import sleep
 def menu_principal():
     while True:
         print("\n--- Menu Principal ---")
-        print("1. Login")
+        print("1. Cadastro")
         print("2. Gastos")
         print("3. Planejamento Financeiro")
         print("4. Renda")

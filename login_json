@@ -28,5 +28,11 @@
         "idade": "19",
         "cpf": "093056897",
         "senha": "rafa123"
+    },
+    {
+        "nome": "lopes",
+        "idade": "19",
+        "cpf": "00007",
+        "senha": "lopes123"
     }
 ]

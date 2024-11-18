@@ -10,5 +10,11 @@
         "nome": "lopes",
         "valor_inicial": 1300.0,
         "rendimento_estimado": 2334.61
+    },
+    {
+        "id": "89",
+        "nome": "paulo",
+        "valor_inicial": 50000.0,
+        "rendimento_estimado": 89792.82
     }
 ]
