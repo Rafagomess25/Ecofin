@@ -8,7 +8,7 @@ crud_renda = "dados.json"
 
 if not os.path.exists(crud_renda):
     with open(crud_renda, 'w') as arquivo:
-        json.dump({}, arquivo)
+        json.dump([], arquivo)  # Corrigido para criar uma lista vazia
         
 def criar_menu():
     while True:
@@ -59,7 +59,7 @@ def criar_cliente(id, nome, valor_inicial):
         dados = json.load(arquivo)
         dados.append(cliente)
         arquivo.seek(0)
-        json.dump(dados, arquivo, ident = 4)
+        json.dump(dados, arquivo, indent=4)
         
 def ler_cliente(id):
     """Lê as informações de um cliente especifico. puxa o id."""
@@ -72,7 +72,7 @@ def ler_cliente(id):
 
 def atualizar_cliente(id, novo_valor):
     """Atualiza o valor investido de um cliente."""
-    with open("dados.jon", "r+") as arquivo:
+    with open("dados.json", "r+") as arquivo:
         dados = json.load(arquivo)
         for cliente in dados:
             if cliente["id"] == id:
@@ -88,14 +88,15 @@ def deletar_cliente(id):
         dados = json.load(arquivo)
         dados = [cliente for cliente in dados if cliente["id"] != id]
         arquivo.seek(0)
+        arquivo.truncate()  # Corrige para truncar o arquivo antes de salvar
         json.dump(dados, arquivo, indent=4)
         
 def calcular_rendimento(valor_inicial):
-    """Calcular o redimento estimado após 1 ano."""
+    """Calcular o rendimento estimado após 1 ano."""
     taxa_juros = 0.05 # 5% ao mês 
     meses = 12
-    redimento = valor_inicial * (1 + taxa_juros) ** meses
-    return round(redimento, 2)
+    rendimento = valor_inicial * (1 + taxa_juros) ** meses
+    return round(rendimento, 2)
 
 if __name__ == "__main__":
     criar_menu()

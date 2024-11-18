@@ -1,23 +1,29 @@
-import login_PEDRO
-
+import gastos  
+import login 
+import planejamento  
+import renda  
+from time import sleep
 
 def menu_principal():
     while True:
         print("\n--- Menu Principal ---")
-        print("1. login_PEDRO")
-        print("2. ")
-        print("3. ")
-        print("4. Sair")
+        print("1. Login")
+        print("2. Gastos")
+        print("3. Planejamento Financeiro")
+        print("4. Renda")
+        print("5. Sair")
         
         opcao = input("Escolha uma opção: ")
 
         if opcao == "1":
-            login_PEDRO.menu_produto()
+            login.menu_produto()  
         elif opcao == "2":
-       #     .menu_cliente()
-       # elif opcao == "3":
-      #      .menu_pedido()
-      #  elif opcao == "4":
+            gastos.main()  
+        elif opcao == "3":
+            planejamento.menu_inicial()  #
+        elif opcao == "4":
+            renda.criar_menu()  
+        elif opcao == "5":
             print("Saindo...")
             break
         else:

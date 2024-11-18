@@ -1,0 +1,32 @@
+[
+    {
+        "nome": "Pedro",
+        "idade": "18",
+        "CPF": "123212",
+        "senha": "pdg12"
+    },
+    {
+        "nome": "jose",
+        "idade": "18",
+        "CPF": "1234322342",
+        "senha": "viado"
+    },
+    {
+        "nome": "rafael gomes",
+        "idade": "20",
+        "cpf": "99999",
+        "senha": "12345"
+    },
+    {
+        "nome": "lucas moura",
+        "idade": "30",
+        "cpf": "99999",
+        "senha": "123344"
+    },
+    {
+        "nome": "rafael",
+        "idade": "19",
+        "cpf": "093056897",
+        "senha": "rafa123"
+    }
+]

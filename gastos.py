@@ -1,6 +1,7 @@
 import json
 import os
 from time import sleep
+
 class cor:
     VERMELHO = '\033[91m'
     VERDE = '\033[92m'
@@ -66,7 +67,7 @@ def excluir_despesa(gasto):
         if despesa['gasto']== gasto:
             despesas.remove(despesa)
     with open(arquivo, 'w') as f:
-        json.dump(despesa, f, indent=4, ensure_ascii=False)
+        json.dump(despesas, f, indent=4, ensure_ascii=False)
     print("💲DESPESA EXCLUIDA COM SUCESSO!!💲")
 
 def buscar_despesa(gasto):
@@ -117,9 +118,6 @@ def exibir_menu():
     print("5. LISTAR UMA DESPESA")
     print("6. VERIFICAR LIMITE DE ORÇAMENTO")
     print("7. VOLTAR AO MENU ANTERIOR")
-
-
-
 
 def main():
     while True:
