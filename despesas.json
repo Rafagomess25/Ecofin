@@ -14,5 +14,9 @@
     {
         "gasto": "Video",
         "valor": "15"
+    },
+    {
+        "gasto": "namorada",
+        "valor": "300"
     }
 ]
