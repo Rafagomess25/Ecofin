@@ -16,13 +16,13 @@ def menu_principal():
         opcao = input("Escolha uma opção: ")
 
         if opcao == "1":
-            login.menu_produto()  # Chama o menu de cadastro
+            login.menu_produto()  
         elif opcao == "2":
-            gastos.main()  # Chama o menu principal do CRUD de despesas
+            gastos.main()  
         elif opcao == "3":
-            planejamento.crud_planejamento()  # Chama o CRUD de planejamento financeiro
+            planejamento.crud_planejamento()  
         elif opcao == "4":
-            renda.criar_menu()  # Chama o menu do CRUD de renda
+            renda.criar_menu() 
         elif opcao == "5":
             print("Saindo...")
             break

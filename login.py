@@ -3,7 +3,7 @@ import json
 import os
 from time import sleep
 
-# Caminho do arquivo de login
+
 arquivo = os.path.join(os.path.dirname(__file__), 'login_json')
 
 def carregar_dados():
@@ -60,7 +60,7 @@ def buscar_usuario(nome):
             return
     print("Cadastro não encontrado.")
 
-# Função para o menu de login ou produtos
+
 def menu_produto():
     print("\n--- Menu ---")
     print("1. Cadastrar usuário")
@@ -97,7 +97,7 @@ def menu_produto():
     elif opcao == "5":
         print("Voltando ao menu principal...")
         sleep(3)
-        return  # Volta ao menu principal
+        return 
 
     else:
         print("Opção inválida! Tente novamente.")
