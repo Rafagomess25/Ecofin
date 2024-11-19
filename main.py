@@ -1,5 +1,5 @@
 import gastos  
-import login 
+import login  
 import planejamento  
 import renda  
 from time import sleep
@@ -16,13 +16,13 @@ def menu_principal():
         opcao = input("Escolha uma opção: ")
 
         if opcao == "1":
-            login.menu_produto()  
+            login.menu_produto()  # Chama o menu de cadastro
         elif opcao == "2":
-            gastos.main()  
+            gastos.main()  # Chama o menu principal do CRUD de despesas
         elif opcao == "3":
-            planejamento.menu_inicial()  #
+            planejamento.crud_planejamento()  # Chama o CRUD de planejamento financeiro
         elif opcao == "4":
-            renda.criar_menu()  
+            renda.criar_menu()  # Chama o menu do CRUD de renda
         elif opcao == "5":
             print("Saindo...")
             break

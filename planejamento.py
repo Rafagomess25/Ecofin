@@ -2,7 +2,6 @@ import json
 import os
 from time import sleep
 
-
 # Funções de cores para exibição
 class cor:
     VERMELHO = '\033[91m'
@@ -12,7 +11,6 @@ class cor:
     MAGENTA = '\033[95m'
     CIANO = '\033[96m'
     RESET = '\033[0m'
-
 
 # Função para calcular o valor a ser poupado
 def calcular_poupanca(salario):
@@ -25,7 +23,6 @@ def calcular_poupanca(salario):
     else:
         poupanca = salario * 0.02
         return poupanca
-
 
 # Função para salvar o cálculo de poupança no arquivo JSON
 def salvar_poupanca(salario, poupanca):
@@ -46,7 +43,6 @@ def salvar_poupanca(salario, poupanca):
     print(cor.VERDE + f"📊 Cálculo de poupança de R${salario:.2f} registrado!" + cor.RESET)
     sleep(2)
 
-
 # Função para listar todos os cálculos registrados
 def listar_poupancas():
     if os.path.exists("planejamento.json"):
@@ -63,14 +59,12 @@ def listar_poupancas():
         print("Ainda não há registros de poupança.")
     sleep(3)
 
-
 # Função para o menu de planejamento financeiro
 def exibir_menu_poupanca():
     print("\nMENU DE PLANEJAMENTO FINANCEIRO:")
     print("1. CALCULAR POUPANÇA")
     print("2. HISTÓRICO DE POUPANÇAS")
     print("3. VOLTAR AO MENU PRINCIPAL")
-
 
 # Função do CRUD de planejamento financeiro (CRUD de poupança)
 def crud_planejamento():
@@ -98,4 +92,3 @@ def crud_planejamento():
         else:
             print(cor.VERMELHO + "😡 OPÇÃO INVÁLIDA! TENTE NOVAMENTE!" + cor.RESET)
             sleep(1)
-
